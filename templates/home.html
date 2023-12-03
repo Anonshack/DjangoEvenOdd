@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Even-Odd</title>
+    <style>
+        .style {
+            background-color: rgb(245, 130, 130);
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+            color: rgb(95, 10, 10);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="style">
+        <h1>Toq || Juft</h1>
+        <hr>
+        <div class="col-12">
+            <form method="post">
+                {% csrf_token %}
+                <label>Value 1 : </label>
+                <input type="text" value="{{n}}" name="num1">
+                <br>
+                <br>
+                <button type="submit">Juft | Toq</button>
+                <br>
+                <br>
+                <label>Output : </label>
+                <input type="text" value="{{c}}" name="output">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
